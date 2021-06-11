@@ -1,0 +1,8 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  dllmain.c
+  usb_relay_lib.c
+  hiddata_mswin.c
+  Generating Code...
+hiddata_mswin.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\Debug\usb_relay_device.lib and object C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\Debug\usb_relay_device.exp
+  usb-relay-dll(vc2017) .vcxproj -> C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\Debug\usb_relay_device.dll
