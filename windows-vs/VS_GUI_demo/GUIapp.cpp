@@ -130,7 +130,7 @@ void Form1::buttonClose_Click(System::Object^  sender, System::EventArgs^  e)
     }
 }
 
-// Open all channels
+// Open all PLC
 void Form1::RopenAll_Click(System::Object^  sender, System::EventArgs^  e)
 {
     if (!g_dev) {
@@ -148,7 +148,7 @@ void Form1::RopenAll_Click(System::Object^  sender, System::EventArgs^  e)
     }
 }
 
-// Close all channels
+// Close all PLC
 void Form1::RcloseAll_Click(System::Object^  sender, System::EventArgs^  e)
 {
     if (!g_dev) {

@@ -1,0 +1,6 @@
+﻿  hiddata_mswin.c
+  usb_relay_lib.c
+  dllmain.c
+  Generating Code...
+     Creating library D:\FMS\Csharp\Project\USB Relay HID\windows-vs\x64\Debug\usb_relay_device.lib and object D:\FMS\Csharp\Project\USB Relay HID\windows-vs\x64\Debug\usb_relay_device.exp
+  usb-relay-dll(vc2017) .vcxproj -> D:\FMS\Csharp\Project\USB Relay HID\windows-vs\x64\Debug\usb_relay_device.dll

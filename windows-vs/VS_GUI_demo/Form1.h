@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 namespace GUIapp {
 
@@ -39,14 +39,14 @@ namespace GUIapp {
             for ( int i = 0; i <  MaxRelaysNum; i++ ) {
                 System::Windows::Forms::Button^ b;
                 b = static_cast<System::Windows::Forms::Button^>(aButtonsOpen->GetValue(i));
-                b->Text = L"Bật";
+                b->Text = L"ON";
                 b->Click += gcnew System::EventHandler(this, &Form1::Ropen1_Click);
                 b = static_cast<System::Windows::Forms::Button^>(aButtonsClose->GetValue(i));
-                b->Text = L"Tắt";
+                b->Text = L"OFF";
                 b->Click += gcnew System::EventHandler(this, &Form1::Rclose1_Click);
                 System::Windows::Forms::TextBox^ t;
                 t = static_cast<System::Windows::Forms::TextBox^>(aRNames->GetValue(i));
-                t->Text = L"Mức " + i.ToString();
+                t->Text = L"PLC " + i.ToString();
                 t = static_cast<System::Windows::Forms::TextBox^>(aIndicators->GetValue(i));
             }
         }
@@ -208,7 +208,7 @@ namespace GUIapp {
             this->buttonFind->Size = System::Drawing::Size(87, 30);
             this->buttonFind->TabIndex = 0;
             this->buttonFind->Tag = L"99";
-            this->buttonFind->Text = L"Tìm thiết bị";
+            this->buttonFind->Text = L"Search Device";
             this->buttonFind->UseVisualStyleBackColor = true;
             this->buttonFind->Click += gcnew System::EventHandler(this, &Form1::buttonFind_Click);
             // 
@@ -231,7 +231,7 @@ namespace GUIapp {
             this->buttonOpen->Name = L"buttonOpen";
             this->buttonOpen->Size = System::Drawing::Size(87, 30);
             this->buttonOpen->TabIndex = 2;
-            this->buttonOpen->Text = L"Kết nối";
+            this->buttonOpen->Text = L"Connect";
             this->buttonOpen->UseVisualStyleBackColor = true;
             this->buttonOpen->Click += gcnew System::EventHandler(this, &Form1::buttonOpen_Click);
             // 
@@ -256,7 +256,7 @@ namespace GUIapp {
             this->buttonClose->Name = L"buttonClose";
             this->buttonClose->Size = System::Drawing::Size(60, 30);
             this->buttonClose->TabIndex = 4;
-            this->buttonClose->Text = L"Thoát";
+            this->buttonClose->Text = L"Exit";
             this->buttonClose->UseVisualStyleBackColor = true;
             this->buttonClose->Click += gcnew System::EventHandler(this, &Form1::buttonClose_Click);
             // 
@@ -324,7 +324,7 @@ namespace GUIapp {
             this->Rclose8->Name = L"Rclose8";
             this->Rclose8->Size = System::Drawing::Size(60, 1);
             this->Rclose8->TabIndex = 30;
-            this->Rclose8->Text = L"Tắt";
+            this->Rclose8->Text = L"OFF";
             this->Rclose8->UseVisualStyleBackColor = true;
             this->Rclose8->Visible = false;
             // 
@@ -335,7 +335,7 @@ namespace GUIapp {
             this->Rclose7->Name = L"Rclose7";
             this->Rclose7->Size = System::Drawing::Size(60, 1);
             this->Rclose7->TabIndex = 29;
-            this->Rclose7->Text = L"Tắt";
+            this->Rclose7->Text = L"OFF";
             this->Rclose7->UseVisualStyleBackColor = true;
             this->Rclose7->Visible = false;
             // 
@@ -346,7 +346,7 @@ namespace GUIapp {
             this->Rclose6->Name = L"Rclose6";
             this->Rclose6->Size = System::Drawing::Size(60, 1);
             this->Rclose6->TabIndex = 28;
-            this->Rclose6->Text = L"Tắt";
+            this->Rclose6->Text = L"OFF";
             this->Rclose6->UseVisualStyleBackColor = true;
             this->Rclose6->Visible = false;
             // 
@@ -357,7 +357,7 @@ namespace GUIapp {
             this->Rclose5->Name = L"Rclose5";
             this->Rclose5->Size = System::Drawing::Size(60, 1);
             this->Rclose5->TabIndex = 27;
-            this->Rclose5->Text = L"Tắt";
+            this->Rclose5->Text = L"OFF";
             this->Rclose5->UseVisualStyleBackColor = true;
             this->Rclose5->Visible = false;
             // 
@@ -370,7 +370,7 @@ namespace GUIapp {
             this->Rclose4->Name = L"Rclose4";
             this->Rclose4->Size = System::Drawing::Size(60, 29);
             this->Rclose4->TabIndex = 26;
-            this->Rclose4->Text = L"Tắt";
+            this->Rclose4->Text = L"OFF";
             this->Rclose4->UseVisualStyleBackColor = true;
             // 
             // Rclose3
@@ -382,7 +382,7 @@ namespace GUIapp {
             this->Rclose3->Name = L"Rclose3";
             this->Rclose3->Size = System::Drawing::Size(60, 29);
             this->Rclose3->TabIndex = 25;
-            this->Rclose3->Text = L"Tắt";
+            this->Rclose3->Text = L"OFF";
             this->Rclose3->UseVisualStyleBackColor = true;
             // 
             // Rclose2
@@ -394,7 +394,7 @@ namespace GUIapp {
             this->Rclose2->Name = L"Rclose2";
             this->Rclose2->Size = System::Drawing::Size(60, 29);
             this->Rclose2->TabIndex = 24;
-            this->Rclose2->Text = L"Tắt";
+            this->Rclose2->Text = L"OFF";
             this->Rclose2->UseVisualStyleBackColor = true;
             // 
             // Rname1
@@ -595,7 +595,7 @@ namespace GUIapp {
             this->Ropen1->Name = L"Ropen1";
             this->Ropen1->Size = System::Drawing::Size(58, 29);
             this->Ropen1->TabIndex = 15;
-            this->Ropen1->Text = L"Mở";
+            this->Ropen1->Text = L"ON";
             this->Ropen1->UseVisualStyleBackColor = true;
             // 
             // Ropen2
@@ -607,7 +607,7 @@ namespace GUIapp {
             this->Ropen2->Name = L"Ropen2";
             this->Ropen2->Size = System::Drawing::Size(58, 29);
             this->Ropen2->TabIndex = 16;
-            this->Ropen2->Text = L"Mở";
+            this->Ropen2->Text = L"ON";
             this->Ropen2->UseVisualStyleBackColor = true;
             // 
             // Ropen3
@@ -619,7 +619,7 @@ namespace GUIapp {
             this->Ropen3->Name = L"Ropen3";
             this->Ropen3->Size = System::Drawing::Size(58, 29);
             this->Ropen3->TabIndex = 17;
-            this->Ropen3->Text = L"Mở";
+            this->Ropen3->Text = L"ON";
             this->Ropen3->UseVisualStyleBackColor = true;
             // 
             // Ropen4
@@ -631,7 +631,7 @@ namespace GUIapp {
             this->Ropen4->Name = L"Ropen4";
             this->Ropen4->Size = System::Drawing::Size(58, 29);
             this->Ropen4->TabIndex = 18;
-            this->Ropen4->Text = L"Mở";
+            this->Ropen4->Text = L"ON";
             this->Ropen4->UseVisualStyleBackColor = true;
             // 
             // Ropen5
@@ -641,7 +641,7 @@ namespace GUIapp {
             this->Ropen5->Name = L"Ropen5";
             this->Ropen5->Size = System::Drawing::Size(58, 1);
             this->Ropen5->TabIndex = 19;
-            this->Ropen5->Text = L"Bật";
+            this->Ropen5->Text = L"ON";
             this->Ropen5->UseVisualStyleBackColor = true;
             this->Ropen5->Visible = false;
             // 
@@ -652,7 +652,7 @@ namespace GUIapp {
             this->Ropen6->Name = L"Ropen6";
             this->Ropen6->Size = System::Drawing::Size(58, 1);
             this->Ropen6->TabIndex = 20;
-            this->Ropen6->Text = L"Bật";
+            this->Ropen6->Text = L"ON";
             this->Ropen6->UseVisualStyleBackColor = true;
             this->Ropen6->Visible = false;
             // 
@@ -663,7 +663,7 @@ namespace GUIapp {
             this->Ropen7->Name = L"Ropen7";
             this->Ropen7->Size = System::Drawing::Size(58, 1);
             this->Ropen7->TabIndex = 21;
-            this->Ropen7->Text = L"Bật";
+            this->Ropen7->Text = L"ON";
             this->Ropen7->UseVisualStyleBackColor = true;
             this->Ropen7->Visible = false;
             // 
@@ -674,7 +674,7 @@ namespace GUIapp {
             this->Ropen8->Name = L"Ropen8";
             this->Ropen8->Size = System::Drawing::Size(58, 1);
             this->Ropen8->TabIndex = 22;
-            this->Ropen8->Text = L"Bật";
+            this->Ropen8->Text = L"ON";
             this->Ropen8->UseVisualStyleBackColor = true;
             this->Ropen8->Visible = false;
             // 
@@ -702,7 +702,7 @@ namespace GUIapp {
             this->Rclose1->Name = L"Rclose1";
             this->Rclose1->Size = System::Drawing::Size(60, 29);
             this->Rclose1->TabIndex = 23;
-            this->Rclose1->Text = L"Tắt";
+            this->Rclose1->Text = L"OFF";
             this->Rclose1->UseVisualStyleBackColor = true;
             // 
             // RopenAll
@@ -713,7 +713,7 @@ namespace GUIapp {
             this->RopenAll->Name = L"RopenAll";
             this->RopenAll->Size = System::Drawing::Size(108, 35);
             this->RopenAll->TabIndex = 6;
-            this->RopenAll->Text = L"Bật tất cả";
+            this->RopenAll->Text = L"ALL ON";
             this->RopenAll->UseVisualStyleBackColor = true;
             this->RopenAll->Click += gcnew System::EventHandler(this, &Form1::RopenAll_Click);
             // 
@@ -725,7 +725,7 @@ namespace GUIapp {
             this->RcloseAll->Name = L"RcloseAll";
             this->RcloseAll->Size = System::Drawing::Size(108, 35);
             this->RcloseAll->TabIndex = 7;
-            this->RcloseAll->Text = L"Tắt Nguồn";
+            this->RcloseAll->Text = L"ALL OFF";
             this->RcloseAll->UseVisualStyleBackColor = true;
             this->RcloseAll->Click += gcnew System::EventHandler(this, &Form1::RcloseAll_Click);
             // 
@@ -760,7 +760,7 @@ namespace GUIapp {
             this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
             this->MaximizeBox = false;
             this->Name = L"Form1";
-            this->Text = L"Hệ thống điều khiển";
+            this->Text = L"USB HID";
             this->tableLayoutPanel1->ResumeLayout(false);
             this->tableLayoutPanel1->PerformLayout();
             this->ResumeLayout(false);

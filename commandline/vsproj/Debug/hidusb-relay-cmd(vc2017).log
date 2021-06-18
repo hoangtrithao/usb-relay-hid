@@ -1,5 +1,1 @@
-﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  usbrelay-cmd.c
-  hiddata_mswin.c
-  Generating Code...
-  hidusb-relay-cmd(vc2017).vcxproj -> C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\Debug\hidusb-relay-cmd.exe
+﻿  hidusb-relay-cmd(vc2017).vcxproj -> D:\FMS\Csharp\Project\USB Relay HID\windows-vs\Debug\hidusb-relay-cmd.exe
