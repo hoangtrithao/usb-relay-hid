@@ -46,7 +46,7 @@ namespace GUIapp {
                 b->Click += gcnew System::EventHandler(this, &Form1::Rclose1_Click);
                 System::Windows::Forms::TextBox^ t;
                 t = static_cast<System::Windows::Forms::TextBox^>(aRNames->GetValue(i));
-                t->Text = L"PLC " + i.ToString();
+                t->Text = L"PLC " + (i).ToString();
                 t = static_cast<System::Windows::Forms::TextBox^>(aIndicators->GetValue(i));
             }
         }
@@ -201,11 +201,11 @@ namespace GUIapp {
             // 
             // buttonFind
             // 
-            this->buttonFind->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->buttonFind->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->buttonFind->Location = System::Drawing::Point(15, 9);
+            this->buttonFind->Location = System::Drawing::Point(12, 9);
             this->buttonFind->Name = L"buttonFind";
-            this->buttonFind->Size = System::Drawing::Size(87, 30);
+            this->buttonFind->Size = System::Drawing::Size(125, 39);
             this->buttonFind->TabIndex = 0;
             this->buttonFind->Tag = L"99";
             this->buttonFind->Text = L"Search Device";
@@ -214,22 +214,22 @@ namespace GUIapp {
             // 
             // comboDevices
             // 
-            this->comboDevices->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->comboDevices->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->comboDevices->FormattingEnabled = true;
-            this->comboDevices->ItemHeight = 16;
-            this->comboDevices->Location = System::Drawing::Point(108, 11);
+            this->comboDevices->ItemHeight = 29;
+            this->comboDevices->Location = System::Drawing::Point(143, 10);
             this->comboDevices->Name = L"comboDevices";
-            this->comboDevices->Size = System::Drawing::Size(159, 24);
+            this->comboDevices->Size = System::Drawing::Size(224, 37);
             this->comboDevices->TabIndex = 1;
             // 
             // buttonOpen
             // 
-            this->buttonOpen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->buttonOpen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->buttonOpen->Location = System::Drawing::Point(15, 45);
+            this->buttonOpen->Location = System::Drawing::Point(12, 53);
             this->buttonOpen->Name = L"buttonOpen";
-            this->buttonOpen->Size = System::Drawing::Size(87, 30);
+            this->buttonOpen->Size = System::Drawing::Size(125, 48);
             this->buttonOpen->TabIndex = 2;
             this->buttonOpen->Text = L"Connect";
             this->buttonOpen->UseVisualStyleBackColor = true;
@@ -239,22 +239,22 @@ namespace GUIapp {
             // 
             this->IndOpen->BackColor = System::Drawing::Color::Red;
             this->IndOpen->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOpen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->IndOpen->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->IndOpen->Location = System::Drawing::Point(108, 46);
+            this->IndOpen->Location = System::Drawing::Point(143, 54);
             this->IndOpen->Multiline = true;
             this->IndOpen->Name = L"IndOpen";
-            this->IndOpen->Size = System::Drawing::Size(93, 28);
+            this->IndOpen->Size = System::Drawing::Size(133, 47);
             this->IndOpen->TabIndex = 3;
             this->IndOpen->TabStop = false;
             // 
             // buttonClose
             // 
-            this->buttonClose->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->buttonClose->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->buttonClose->Location = System::Drawing::Point(207, 45);
+            this->buttonClose->Location = System::Drawing::Point(282, 53);
             this->buttonClose->Name = L"buttonClose";
-            this->buttonClose->Size = System::Drawing::Size(60, 30);
+            this->buttonClose->Size = System::Drawing::Size(85, 48);
             this->buttonClose->TabIndex = 4;
             this->buttonClose->Text = L"Exit";
             this->buttonClose->UseVisualStyleBackColor = true;
@@ -303,7 +303,9 @@ namespace GUIapp {
             this->tableLayoutPanel1->Controls->Add(this->Ropen8, 1, 7);
             this->tableLayoutPanel1->Controls->Add(this->IndOn1, 2, 0);
             this->tableLayoutPanel1->Controls->Add(this->Rclose1, 3, 0);
-            this->tableLayoutPanel1->Location = System::Drawing::Point(12, 83);
+            this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->tableLayoutPanel1->Location = System::Drawing::Point(9, 107);
             this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
             this->tableLayoutPanel1->RowCount = 4;
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
@@ -314,15 +316,17 @@ namespace GUIapp {
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 0)));
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 0)));
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 0)));
-            this->tableLayoutPanel1->Size = System::Drawing::Size(258, 185);
+            this->tableLayoutPanel1->Size = System::Drawing::Size(361, 233);
             this->tableLayoutPanel1->TabIndex = 5;
             // 
             // Rclose8
             // 
             this->Rclose8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose8->Location = System::Drawing::Point(195, 187);
+            this->Rclose8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rclose8->Location = System::Drawing::Point(273, 235);
             this->Rclose8->Name = L"Rclose8";
-            this->Rclose8->Size = System::Drawing::Size(60, 1);
+            this->Rclose8->Size = System::Drawing::Size(85, 1);
             this->Rclose8->TabIndex = 30;
             this->Rclose8->Text = L"OFF";
             this->Rclose8->UseVisualStyleBackColor = true;
@@ -331,9 +335,11 @@ namespace GUIapp {
             // Rclose7
             // 
             this->Rclose7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose7->Location = System::Drawing::Point(195, 187);
+            this->Rclose7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rclose7->Location = System::Drawing::Point(273, 235);
             this->Rclose7->Name = L"Rclose7";
-            this->Rclose7->Size = System::Drawing::Size(60, 1);
+            this->Rclose7->Size = System::Drawing::Size(85, 1);
             this->Rclose7->TabIndex = 29;
             this->Rclose7->Text = L"OFF";
             this->Rclose7->UseVisualStyleBackColor = true;
@@ -342,9 +348,11 @@ namespace GUIapp {
             // Rclose6
             // 
             this->Rclose6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose6->Location = System::Drawing::Point(195, 187);
+            this->Rclose6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rclose6->Location = System::Drawing::Point(273, 235);
             this->Rclose6->Name = L"Rclose6";
-            this->Rclose6->Size = System::Drawing::Size(60, 1);
+            this->Rclose6->Size = System::Drawing::Size(85, 1);
             this->Rclose6->TabIndex = 28;
             this->Rclose6->Text = L"OFF";
             this->Rclose6->UseVisualStyleBackColor = true;
@@ -353,9 +361,11 @@ namespace GUIapp {
             // Rclose5
             // 
             this->Rclose5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose5->Location = System::Drawing::Point(195, 187);
+            this->Rclose5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rclose5->Location = System::Drawing::Point(273, 235);
             this->Rclose5->Name = L"Rclose5";
-            this->Rclose5->Size = System::Drawing::Size(60, 1);
+            this->Rclose5->Size = System::Drawing::Size(85, 1);
             this->Rclose5->TabIndex = 27;
             this->Rclose5->Text = L"OFF";
             this->Rclose5->UseVisualStyleBackColor = true;
@@ -364,11 +374,11 @@ namespace GUIapp {
             // Rclose4
             // 
             this->Rclose4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rclose4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rclose4->Location = System::Drawing::Point(195, 146);
+            this->Rclose4->Location = System::Drawing::Point(273, 177);
             this->Rclose4->Name = L"Rclose4";
-            this->Rclose4->Size = System::Drawing::Size(60, 29);
+            this->Rclose4->Size = System::Drawing::Size(85, 52);
             this->Rclose4->TabIndex = 26;
             this->Rclose4->Text = L"OFF";
             this->Rclose4->UseVisualStyleBackColor = true;
@@ -376,11 +386,11 @@ namespace GUIapp {
             // Rclose3
             // 
             this->Rclose3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rclose3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rclose3->Location = System::Drawing::Point(195, 100);
+            this->Rclose3->Location = System::Drawing::Point(273, 119);
             this->Rclose3->Name = L"Rclose3";
-            this->Rclose3->Size = System::Drawing::Size(60, 29);
+            this->Rclose3->Size = System::Drawing::Size(85, 52);
             this->Rclose3->TabIndex = 25;
             this->Rclose3->Text = L"OFF";
             this->Rclose3->UseVisualStyleBackColor = true;
@@ -388,104 +398,124 @@ namespace GUIapp {
             // Rclose2
             // 
             this->Rclose2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rclose2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rclose2->Location = System::Drawing::Point(195, 54);
+            this->Rclose2->Location = System::Drawing::Point(273, 61);
             this->Rclose2->Name = L"Rclose2";
-            this->Rclose2->Size = System::Drawing::Size(60, 29);
+            this->Rclose2->Size = System::Drawing::Size(85, 52);
             this->Rclose2->TabIndex = 24;
             this->Rclose2->Text = L"OFF";
             this->Rclose2->UseVisualStyleBackColor = true;
             // 
             // Rname1
             // 
-            this->Rname1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rname1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+                | System::Windows::Forms::AnchorStyles::Left)
+                | System::Windows::Forms::AnchorStyles::Right));
+            this->Rname1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rname1->Location = System::Drawing::Point(3, 9);
+            this->Rname1->Location = System::Drawing::Point(3, 3);
             this->Rname1->MaxLength = 64;
             this->Rname1->Multiline = true;
             this->Rname1->Name = L"Rname1";
-            this->Rname1->Size = System::Drawing::Size(71, 27);
+            this->Rname1->ReadOnly = true;
+            this->Rname1->Size = System::Drawing::Size(102, 52);
             this->Rname1->TabIndex = 0;
             this->Rname1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             // 
             // Rname2
             // 
-            this->Rname2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rname2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+                | System::Windows::Forms::AnchorStyles::Left)
+                | System::Windows::Forms::AnchorStyles::Right));
+            this->Rname2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rname2->Location = System::Drawing::Point(3, 55);
+            this->Rname2->Location = System::Drawing::Point(3, 61);
             this->Rname2->MaxLength = 64;
             this->Rname2->Multiline = true;
             this->Rname2->Name = L"Rname2";
-            this->Rname2->Size = System::Drawing::Size(71, 27);
+            this->Rname2->ReadOnly = true;
+            this->Rname2->Size = System::Drawing::Size(102, 52);
             this->Rname2->TabIndex = 1;
             this->Rname2->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             // 
             // Rname3
             // 
-            this->Rname3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rname3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+                | System::Windows::Forms::AnchorStyles::Left)
+                | System::Windows::Forms::AnchorStyles::Right));
+            this->Rname3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rname3->Location = System::Drawing::Point(3, 101);
+            this->Rname3->Location = System::Drawing::Point(3, 119);
             this->Rname3->MaxLength = 64;
             this->Rname3->Multiline = true;
             this->Rname3->Name = L"Rname3";
-            this->Rname3->Size = System::Drawing::Size(71, 27);
+            this->Rname3->ReadOnly = true;
+            this->Rname3->Size = System::Drawing::Size(102, 52);
             this->Rname3->TabIndex = 2;
             this->Rname3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             // 
             // Rname4
             // 
-            this->Rname4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rname4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+                | System::Windows::Forms::AnchorStyles::Left)
+                | System::Windows::Forms::AnchorStyles::Right));
+            this->Rname4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rname4->Location = System::Drawing::Point(3, 147);
+            this->Rname4->Location = System::Drawing::Point(3, 177);
             this->Rname4->MaxLength = 64;
             this->Rname4->Multiline = true;
             this->Rname4->Name = L"Rname4";
-            this->Rname4->Size = System::Drawing::Size(71, 27);
+            this->Rname4->ReadOnly = true;
+            this->Rname4->Size = System::Drawing::Size(102, 52);
             this->Rname4->TabIndex = 3;
             this->Rname4->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             // 
             // Rname5
             // 
             this->Rname5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname5->Location = System::Drawing::Point(3, 187);
+            this->Rname5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rname5->Location = System::Drawing::Point(3, 235);
             this->Rname5->MaxLength = 64;
             this->Rname5->Name = L"Rname5";
-            this->Rname5->Size = System::Drawing::Size(71, 20);
+            this->Rname5->Size = System::Drawing::Size(102, 35);
             this->Rname5->TabIndex = 4;
             this->Rname5->Visible = false;
             // 
             // Rname6
             // 
             this->Rname6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname6->Location = System::Drawing::Point(3, 187);
+            this->Rname6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rname6->Location = System::Drawing::Point(3, 235);
             this->Rname6->MaxLength = 64;
             this->Rname6->Name = L"Rname6";
-            this->Rname6->Size = System::Drawing::Size(71, 20);
+            this->Rname6->Size = System::Drawing::Size(102, 35);
             this->Rname6->TabIndex = 5;
             this->Rname6->Visible = false;
             // 
             // Rname7
             // 
             this->Rname7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname7->Location = System::Drawing::Point(3, 187);
+            this->Rname7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rname7->Location = System::Drawing::Point(3, 235);
             this->Rname7->MaxLength = 64;
             this->Rname7->Name = L"Rname7";
-            this->Rname7->Size = System::Drawing::Size(71, 20);
+            this->Rname7->Size = System::Drawing::Size(102, 35);
             this->Rname7->TabIndex = 6;
             this->Rname7->Visible = false;
             // 
             // Rname8
             // 
             this->Rname8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rname8->Location = System::Drawing::Point(3, 187);
+            this->Rname8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Rname8->Location = System::Drawing::Point(3, 235);
             this->Rname8->MaxLength = 64;
             this->Rname8->Name = L"Rname8";
-            this->Rname8->Size = System::Drawing::Size(71, 20);
+            this->Rname8->Size = System::Drawing::Size(102, 35);
             this->Rname8->TabIndex = 7;
             this->Rname8->Visible = false;
             // 
@@ -494,13 +524,13 @@ namespace GUIapp {
             this->IndOn2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn2->BackColor = System::Drawing::Color::Red;
             this->IndOn2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->IndOn2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->IndOn2->Location = System::Drawing::Point(144, 55);
+            this->IndOn2->Location = System::Drawing::Point(201, 61);
             this->IndOn2->Multiline = true;
             this->IndOn2->Name = L"IndOn2";
             this->IndOn2->ReadOnly = true;
-            this->IndOn2->Size = System::Drawing::Size(45, 27);
+            this->IndOn2->Size = System::Drawing::Size(66, 52);
             this->IndOn2->TabIndex = 8;
             this->IndOn2->TabStop = false;
             // 
@@ -509,13 +539,13 @@ namespace GUIapp {
             this->IndOn3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn3->BackColor = System::Drawing::Color::Red;
             this->IndOn3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->IndOn3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->IndOn3->Location = System::Drawing::Point(144, 101);
+            this->IndOn3->Location = System::Drawing::Point(201, 119);
             this->IndOn3->Multiline = true;
             this->IndOn3->Name = L"IndOn3";
             this->IndOn3->ReadOnly = true;
-            this->IndOn3->Size = System::Drawing::Size(45, 27);
+            this->IndOn3->Size = System::Drawing::Size(66, 52);
             this->IndOn3->TabIndex = 9;
             this->IndOn3->TabStop = false;
             // 
@@ -524,13 +554,13 @@ namespace GUIapp {
             this->IndOn4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn4->BackColor = System::Drawing::Color::Red;
             this->IndOn4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->IndOn4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->IndOn4->Location = System::Drawing::Point(144, 147);
+            this->IndOn4->Location = System::Drawing::Point(201, 177);
             this->IndOn4->Multiline = true;
             this->IndOn4->Name = L"IndOn4";
             this->IndOn4->ReadOnly = true;
-            this->IndOn4->Size = System::Drawing::Size(45, 27);
+            this->IndOn4->Size = System::Drawing::Size(66, 52);
             this->IndOn4->TabIndex = 10;
             this->IndOn4->TabStop = false;
             // 
@@ -539,10 +569,12 @@ namespace GUIapp {
             this->IndOn5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn5->BackColor = System::Drawing::Color::Red;
             this->IndOn5->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn5->Location = System::Drawing::Point(144, 187);
+            this->IndOn5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->IndOn5->Location = System::Drawing::Point(201, 235);
             this->IndOn5->Name = L"IndOn5";
             this->IndOn5->ReadOnly = true;
-            this->IndOn5->Size = System::Drawing::Size(45, 20);
+            this->IndOn5->Size = System::Drawing::Size(66, 35);
             this->IndOn5->TabIndex = 11;
             this->IndOn5->TabStop = false;
             this->IndOn5->Visible = false;
@@ -552,10 +584,12 @@ namespace GUIapp {
             this->IndOn6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn6->BackColor = System::Drawing::Color::Red;
             this->IndOn6->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn6->Location = System::Drawing::Point(144, 187);
+            this->IndOn6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->IndOn6->Location = System::Drawing::Point(201, 235);
             this->IndOn6->Name = L"IndOn6";
             this->IndOn6->ReadOnly = true;
-            this->IndOn6->Size = System::Drawing::Size(45, 20);
+            this->IndOn6->Size = System::Drawing::Size(66, 35);
             this->IndOn6->TabIndex = 12;
             this->IndOn6->TabStop = false;
             this->IndOn6->Visible = false;
@@ -565,10 +599,12 @@ namespace GUIapp {
             this->IndOn7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn7->BackColor = System::Drawing::Color::Red;
             this->IndOn7->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn7->Location = System::Drawing::Point(144, 187);
+            this->IndOn7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->IndOn7->Location = System::Drawing::Point(201, 235);
             this->IndOn7->Name = L"IndOn7";
             this->IndOn7->ReadOnly = true;
-            this->IndOn7->Size = System::Drawing::Size(45, 20);
+            this->IndOn7->Size = System::Drawing::Size(66, 35);
             this->IndOn7->TabIndex = 13;
             this->IndOn7->TabStop = false;
             this->IndOn7->Visible = false;
@@ -578,10 +614,12 @@ namespace GUIapp {
             this->IndOn8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn8->BackColor = System::Drawing::Color::Red;
             this->IndOn8->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn8->Location = System::Drawing::Point(144, 187);
+            this->IndOn8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->IndOn8->Location = System::Drawing::Point(201, 235);
             this->IndOn8->Name = L"IndOn8";
             this->IndOn8->ReadOnly = true;
-            this->IndOn8->Size = System::Drawing::Size(45, 20);
+            this->IndOn8->Size = System::Drawing::Size(66, 35);
             this->IndOn8->TabIndex = 14;
             this->IndOn8->TabStop = false;
             this->IndOn8->Visible = false;
@@ -589,11 +627,11 @@ namespace GUIapp {
             // Ropen1
             // 
             this->Ropen1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Ropen1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Ropen1->Location = System::Drawing::Point(80, 8);
+            this->Ropen1->Location = System::Drawing::Point(111, 3);
             this->Ropen1->Name = L"Ropen1";
-            this->Ropen1->Size = System::Drawing::Size(58, 29);
+            this->Ropen1->Size = System::Drawing::Size(84, 52);
             this->Ropen1->TabIndex = 15;
             this->Ropen1->Text = L"ON";
             this->Ropen1->UseVisualStyleBackColor = true;
@@ -601,11 +639,11 @@ namespace GUIapp {
             // Ropen2
             // 
             this->Ropen2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Ropen2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Ropen2->Location = System::Drawing::Point(80, 54);
+            this->Ropen2->Location = System::Drawing::Point(111, 61);
             this->Ropen2->Name = L"Ropen2";
-            this->Ropen2->Size = System::Drawing::Size(58, 29);
+            this->Ropen2->Size = System::Drawing::Size(84, 52);
             this->Ropen2->TabIndex = 16;
             this->Ropen2->Text = L"ON";
             this->Ropen2->UseVisualStyleBackColor = true;
@@ -613,11 +651,11 @@ namespace GUIapp {
             // Ropen3
             // 
             this->Ropen3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Ropen3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Ropen3->Location = System::Drawing::Point(80, 100);
+            this->Ropen3->Location = System::Drawing::Point(111, 119);
             this->Ropen3->Name = L"Ropen3";
-            this->Ropen3->Size = System::Drawing::Size(58, 29);
+            this->Ropen3->Size = System::Drawing::Size(84, 52);
             this->Ropen3->TabIndex = 17;
             this->Ropen3->Text = L"ON";
             this->Ropen3->UseVisualStyleBackColor = true;
@@ -625,11 +663,11 @@ namespace GUIapp {
             // Ropen4
             // 
             this->Ropen4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Ropen4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Ropen4->Location = System::Drawing::Point(80, 146);
+            this->Ropen4->Location = System::Drawing::Point(111, 177);
             this->Ropen4->Name = L"Ropen4";
-            this->Ropen4->Size = System::Drawing::Size(58, 29);
+            this->Ropen4->Size = System::Drawing::Size(84, 52);
             this->Ropen4->TabIndex = 18;
             this->Ropen4->Text = L"ON";
             this->Ropen4->UseVisualStyleBackColor = true;
@@ -637,9 +675,11 @@ namespace GUIapp {
             // Ropen5
             // 
             this->Ropen5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen5->Location = System::Drawing::Point(80, 187);
+            this->Ropen5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Ropen5->Location = System::Drawing::Point(111, 235);
             this->Ropen5->Name = L"Ropen5";
-            this->Ropen5->Size = System::Drawing::Size(58, 1);
+            this->Ropen5->Size = System::Drawing::Size(84, 1);
             this->Ropen5->TabIndex = 19;
             this->Ropen5->Text = L"ON";
             this->Ropen5->UseVisualStyleBackColor = true;
@@ -648,9 +688,11 @@ namespace GUIapp {
             // Ropen6
             // 
             this->Ropen6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen6->Location = System::Drawing::Point(80, 187);
+            this->Ropen6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Ropen6->Location = System::Drawing::Point(111, 235);
             this->Ropen6->Name = L"Ropen6";
-            this->Ropen6->Size = System::Drawing::Size(58, 1);
+            this->Ropen6->Size = System::Drawing::Size(84, 1);
             this->Ropen6->TabIndex = 20;
             this->Ropen6->Text = L"ON";
             this->Ropen6->UseVisualStyleBackColor = true;
@@ -659,9 +701,11 @@ namespace GUIapp {
             // Ropen7
             // 
             this->Ropen7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen7->Location = System::Drawing::Point(80, 187);
+            this->Ropen7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Ropen7->Location = System::Drawing::Point(111, 235);
             this->Ropen7->Name = L"Ropen7";
-            this->Ropen7->Size = System::Drawing::Size(58, 1);
+            this->Ropen7->Size = System::Drawing::Size(84, 1);
             this->Ropen7->TabIndex = 21;
             this->Ropen7->Text = L"ON";
             this->Ropen7->UseVisualStyleBackColor = true;
@@ -670,9 +714,11 @@ namespace GUIapp {
             // Ropen8
             // 
             this->Ropen8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Ropen8->Location = System::Drawing::Point(80, 187);
+            this->Ropen8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->Ropen8->Location = System::Drawing::Point(111, 235);
             this->Ropen8->Name = L"Ropen8";
-            this->Ropen8->Size = System::Drawing::Size(58, 1);
+            this->Ropen8->Size = System::Drawing::Size(84, 1);
             this->Ropen8->TabIndex = 22;
             this->Ropen8->Text = L"ON";
             this->Ropen8->UseVisualStyleBackColor = true;
@@ -683,35 +729,35 @@ namespace GUIapp {
             this->IndOn1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
             this->IndOn1->BackColor = System::Drawing::Color::Red;
             this->IndOn1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-            this->IndOn1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->IndOn1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->IndOn1->Location = System::Drawing::Point(144, 9);
+            this->IndOn1->Location = System::Drawing::Point(201, 3);
             this->IndOn1->Multiline = true;
             this->IndOn1->Name = L"IndOn1";
             this->IndOn1->ReadOnly = true;
-            this->IndOn1->Size = System::Drawing::Size(45, 27);
+            this->IndOn1->Size = System::Drawing::Size(66, 52);
             this->IndOn1->TabIndex = 6;
             this->IndOn1->TabStop = false;
             // 
             // Rclose1
             // 
             this->Rclose1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->Rclose1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->Rclose1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->Rclose1->Location = System::Drawing::Point(195, 8);
+            this->Rclose1->Location = System::Drawing::Point(273, 3);
             this->Rclose1->Name = L"Rclose1";
-            this->Rclose1->Size = System::Drawing::Size(60, 29);
+            this->Rclose1->Size = System::Drawing::Size(85, 52);
             this->Rclose1->TabIndex = 23;
             this->Rclose1->Text = L"OFF";
             this->Rclose1->UseVisualStyleBackColor = true;
             // 
             // RopenAll
             // 
-            this->RopenAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->RopenAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->RopenAll->Location = System::Drawing::Point(22, 277);
+            this->RopenAll->Location = System::Drawing::Point(12, 350);
             this->RopenAll->Name = L"RopenAll";
-            this->RopenAll->Size = System::Drawing::Size(108, 35);
+            this->RopenAll->Size = System::Drawing::Size(161, 43);
             this->RopenAll->TabIndex = 6;
             this->RopenAll->Text = L"ALL ON";
             this->RopenAll->UseVisualStyleBackColor = true;
@@ -719,11 +765,11 @@ namespace GUIapp {
             // 
             // RcloseAll
             // 
-            this->RcloseAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->RcloseAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->RcloseAll->Location = System::Drawing::Point(152, 277);
+            this->RcloseAll->Location = System::Drawing::Point(206, 350);
             this->RcloseAll->Name = L"RcloseAll";
-            this->RcloseAll->Size = System::Drawing::Size(108, 35);
+            this->RcloseAll->Size = System::Drawing::Size(161, 43);
             this->RcloseAll->TabIndex = 7;
             this->RcloseAll->Text = L"ALL OFF";
             this->RcloseAll->UseVisualStyleBackColor = true;
@@ -732,14 +778,14 @@ namespace GUIapp {
             // txtMsg
             // 
             this->txtMsg->AutoSize = true;
-            this->txtMsg->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->txtMsg->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->txtMsg->ForeColor = System::Drawing::Color::White;
-            this->txtMsg->Location = System::Drawing::Point(115, 13);
+            this->txtMsg->ForeColor = System::Drawing::Color::Black;
+            this->txtMsg->Location = System::Drawing::Point(12, 400);
             this->txtMsg->Name = L"txtMsg";
-            this->txtMsg->Size = System::Drawing::Size(46, 17);
+            this->txtMsg->Size = System::Drawing::Size(31, 29);
             this->txtMsg->TabIndex = 8;
-            this->txtMsg->Text = L"label1";
+            this->txtMsg->Text = L"...";
             this->txtMsg->Visible = false;
             this->txtMsg->Click += gcnew System::EventHandler(this, &Form1::txtMsg_Click);
             // 
@@ -747,7 +793,7 @@ namespace GUIapp {
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-            this->ClientSize = System::Drawing::Size(281, 324);
+            this->ClientSize = System::Drawing::Size(379, 442);
             this->Controls->Add(this->comboDevices);
             this->Controls->Add(this->buttonOpen);
             this->Controls->Add(this->RcloseAll);

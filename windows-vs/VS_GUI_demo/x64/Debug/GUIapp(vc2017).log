@@ -1,3 +1,6 @@
-﻿  GUIapp.cpp
+﻿  AssemblyInfo.cpp
+  GUIapp.cpp
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  GUIapp(vc2017).vcxproj -> D:\FMS\Csharp\Project\USB Relay HID\windows-vs\x64\Debug\GUIapp.exe
+  GUIapp(vc2017).vcxproj -> D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\x64\Debug\GUIapp.exe

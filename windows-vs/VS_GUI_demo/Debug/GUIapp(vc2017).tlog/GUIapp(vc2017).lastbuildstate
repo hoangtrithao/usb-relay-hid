@@ -1,2 +1,2 @@
-PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.27.29110:TargetPlatformVersion=10.0.18362.0:TargetFrameworkVersion=v4.0::EnableManagedIncrementalBuild=true:
-Debug|Win32|C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\|
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.29.30037:TargetPlatformVersion=10.0.18362.0:TargetFrameworkVersion=v4.0::EnableManagedIncrementalBuild=true:
+Debug|Win32|D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\|

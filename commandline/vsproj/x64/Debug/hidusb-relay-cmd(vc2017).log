@@ -1,4 +1,4 @@
 ﻿  hiddata_mswin.c
   usbrelay-cmd.c
   Generating Code...
-  hidusb-relay-cmd(vc2017).vcxproj -> D:\FMS\Csharp\Project\USB Relay HID\windows-vs\x64\Debug\hidusb-relay-cmd.exe
+  hidusb-relay-cmd(vc2017).vcxproj -> D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\x64\Debug\hidusb-relay-cmd.exe

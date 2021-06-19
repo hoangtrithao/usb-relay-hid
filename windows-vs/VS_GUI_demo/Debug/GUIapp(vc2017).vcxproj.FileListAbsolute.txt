@@ -1,3 +1,6 @@
 C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\VS_GUI_demo\Debug\GUIapp(vc2017).vcxprojAssemblyReference.cache
 C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\VS_GUI_demo\Debug\GUIapp.Form1.resources
 C:\Users\thaoh\Desktop\usb-relay-hid-master\windows-vs\VS_GUI_demo\Debug\GUIapp(vc2017).vcxproj.GenerateResource.cache
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\Debug\GUIapp(vc2017).vcxproj.AssemblyReference.cache
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\Debug\GUIapp.Form1.resources
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\Debug\GUIapp(vc2017).vcxproj.GenerateResource.cache

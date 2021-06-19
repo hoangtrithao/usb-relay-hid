@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\FMS\Csharp\Project\USB Relay HID\windows-vs\Debug\hidusb-relay-cmd.exe</FullPath>
+      <FullPath>D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\Debug\hidusb-relay-cmd.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

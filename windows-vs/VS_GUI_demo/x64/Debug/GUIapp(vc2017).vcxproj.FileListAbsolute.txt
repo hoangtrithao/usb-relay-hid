@@ -1,3 +1,6 @@
 D:\FMS\Csharp\Project\USB Relay HID\windows-vs\VS_GUI_demo\x64\Debug\GUIapp(vc2017).vcxproj.AssemblyReference.cache
 D:\FMS\Csharp\Project\USB Relay HID\windows-vs\VS_GUI_demo\x64\Debug\GUIapp.Form1.resources
 D:\FMS\Csharp\Project\USB Relay HID\windows-vs\VS_GUI_demo\x64\Debug\GUIapp(vc2017).vcxproj.GenerateResource.cache
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\x64\Debug\GUIapp(vc2017).vcxproj.AssemblyReference.cache
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\x64\Debug\GUIapp.Form1.resources
+D:\FMS\Csharp\Project\usb-relay-hid\windows-vs\VS_GUI_demo\x64\Debug\GUIapp(vc2017).vcxproj.GenerateResource.cache
